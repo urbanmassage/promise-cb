@@ -3,7 +3,7 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "sourceMap": true,
-    "target": "es6"
+    "target": "es5"
   },
   "exclude": [
     "node_modules",
