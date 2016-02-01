@@ -12,7 +12,8 @@
     "postcoverage": "if [ -f coverage/lcov.info ]; then node node_modules/.bin/map-coverage && mv coverage/lcov.info coverage/lcov-raw.info && mv coverage/lcov-mapped.info coverage/lcov.info; fi",
     "sendcoverage": "if [ -f coverage/lcov.info ]; then cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js; fi",
     "preversion": "npm run build && npm run test -- --bail",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "postinstall": "[ $(node_modules/.bin/typings -v) ] && typings install || true"
   },
   "author": "Louay Alakkad <louay@alakkad.me>",
   "license": "ISC",
@@ -22,7 +23,8 @@
     "istanbul": "^0.4.2",
     "map-coverage": "0.0.3",
     "mocha": "^2.4.5",
-    "typescript": "^1.7.5"
+    "typescript": "^1.7.5",
+    "typings": "^0.6.4"
   },
   "dependencies": {},
   "repository": {
