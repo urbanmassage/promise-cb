@@ -8,9 +8,9 @@ function toCallback<T>(promise: Promise<T>, cb: Callback<T>): void {
     err => cb(err, null)
   ).catch(err => {
     // Don't swallow thrown errors
-    process.nextTick(() => {
+    setTimeout(() => {
       throw err;
-    });
+    }, 0);
   });
 }
 
