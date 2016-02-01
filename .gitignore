@@ -3,3 +3,4 @@ coverage/
 typings/
 *.js
 *.log
+*.map
