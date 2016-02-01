@@ -1,7 +1,6 @@
 {
   "name": "promise-cb",
   "version": "0.0.1",
-  "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -24,5 +23,15 @@
     "map-coverage": "0.0.3",
     "mocha": "^2.4.5",
     "typescript": "^1.7.5"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urbanmassage/promise-cb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/urbanmassage/promise-cb/issues"
+  },
+  "homepage": "https://github.com/urbanmassage/promise-cb#readme",
+  "description": "Promise-callback helper fuctions"
 }
