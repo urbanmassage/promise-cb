@@ -1,3 +1,5 @@
+/// <reference path="../typings/main.d.ts" />
+
 import {expect} from 'chai';
 import fromCallback from '../from';
 

@@ -4,3 +4,4 @@ typings/
 *.js
 *.log
 *.map
+*.d.ts

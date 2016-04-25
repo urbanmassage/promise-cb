@@ -1,6 +1,4 @@
-interface Callback<T> {
-  (err: Error, result: T): void;
-}
+import {Callback} from './shared';
 
 function toCallback<T>(promise: PromiseLike<T>, cb: Callback<T>): void {
   promise.then(

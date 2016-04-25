@@ -5,5 +5,8 @@ typings/
 
 .gitignore
 test/
-app.d.ts
 tsconfig.json
+
+# source files
+*.ts
+!*.d.ts

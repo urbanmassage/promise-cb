@@ -1,6 +1,4 @@
-interface Callback<T> {
-  (err: Error, result?: T): void;
-}
+import {Callback} from './shared';
 
 function fromCallback<T>(fn: (cb: Callback<T>) => void): Promise<T> {
   return new Promise<T>((resolve, reject) => {
