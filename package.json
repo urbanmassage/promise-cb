@@ -15,7 +15,7 @@
     "sendcoverage": "if [ -f coverage/lcov.info ]; then cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js; fi",
     "preversion": "npm run build && npm run test -- --bail",
     "postversion": "git push --follow-tags",
-    "postinstall": "[ $(node_modules/.bin/typings -v) ] && typings install || true"
+    "postinstall": "node ./scripts/typings-installed-locally.js && typings install || node -e ''"
   },
   "author": "Louay Alakkad <louay@alakkad.me>",
   "license": "ISC",
