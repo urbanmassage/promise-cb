@@ -15,7 +15,7 @@
     "sendcoverage": "if [ -f coverage/lcov.info ]; then cat ./coverage/lcov.info | ./node_modules/codecov.io/bin/codecov.io.js; fi",
     "preversion": "npm run build && npm run test -- --bail",
     "postversion": "git push --follow-tags",
-    "prepublish": "typings install"
+    "prepublish": "typings install && typings prune"
   },
   "author": "Louay Alakkad <louay@alakkad.me>",
   "license": "ISC",
@@ -25,8 +25,8 @@
     "istanbul": "^0.4.2",
     "map-coverage": "0.0.3",
     "mocha": "^2.4.5",
-    "typescript": "^1.7.5",
-    "typings": "^0.6.4"
+    "typescript": "^2.0.6",
+    "typings": "^1.4.0"
   },
   "dependencies": {},
   "repository": {
